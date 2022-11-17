@@ -1,0 +1,48 @@
+# Version of docker-compose.
+version: '3'
+
+# Containers we're going to run.
+services:
+   frontend :
+      build: 
+         context: ./time_manager_front
+         dockerfile : dockerfile
+      restart: on-failure
+      ports:
+         - '8080:8080'
+   # Our Phoenix container.
+   phoenix:
+      build: 
+         context: ./time_manager
+         dockerfile : dockerfile
+      ports:
+         - "4000:4000"
+      environment:
+         PGUSER: postgres
+         PGPASSWORD: postgres
+         PGDATABASE: time_manager_dev
+         PGHOST: db
+         PGPORT: 5432
+      depends_on:
+         - db
+   db:
+      # We use the predefined Postgres image.
+      image: postgres:14.5
+      environment:
+         # Set user/password for Postgres.
+         POSTGRES_USER: postgres
+         POSTGRES_PASSWORD: postgres
+         # Set a path where Postgres should store the data.
+         PGDATA: /var/lib/postgresql/data/pgdata
+         POSTGRE_HOST_AUTH_METHOD: trust
+      restart: always
+      volumes:
+         - 'db:/var/lib/postgresql/data'
+         - './schema.sql:/docker-entrypoint.sh-initdb.d/schema.sql:ro'
+         - './_pgdata:/var/lib/postgresql/data'
+      ports:
+         - '5432:5432'
+# Define the volumes.
+volumes:
+   db:
+      driver: local

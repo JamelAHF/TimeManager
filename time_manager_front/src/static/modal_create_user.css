@@ -1,0 +1,172 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    max-height: 100vh;
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  .modal_content {
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2E38;
+    color: #fefefe;
+  }
+
+  #modal_create_user_content{
+    width: 50%;
+    height: 35vh;
+    margin: 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+
+  }
+
+  #modal_create_user_content>input{
+    width: 30%;
+    margin-top: 10px
+  }
+
+
+  #modal_submit_create_user{
+    width: 15%;
+    margin-top: 3%;
+
+    
+  }
+
+  .modal_input_container{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .modal_input_container:nth-child(n + 1){
+    margin-top: 15px;
+  }
+
+  #modal_delete_user_content{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 1.5%;
+    border-radius: 15px;
+  }
+
+  #modal_delete_user_btn_container{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 10%;
+  }
+
+  #modal_delete_user_content>div>button{
+    margin-right: 5px;
+  }
+
+
+  
+  #modal_update_user_content{
+    width: 50%;
+    height: 25vh;
+    margin: 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+  }
+
+  #modal_update_user_content>input{
+    width: 30%;
+    margin-top: 10px
+  }
+
+  #modal_submit_update_user{
+    margin-top: 3%;
+  }
+
+  #user_container{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 11vh;
+    background-color: #2B2E38;
+    color: #fefefe;
+    border-radius: 5px;
+    padding: 0.5vh 0.7vw;
+    margin: 1vh 0;
+    
+  }
+
+
+  #user_action_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #FF6700;
+    border-top: 1px solid black;
+    padding: 1vh 7vw 0.5vh 7vw
+  }
+
+  #user_action_container>span{
+    cursor: pointer;
+  }
+
+  #user_head_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 3;
+  }
+
+  #user_infos_container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1vw;
+    flex: 2;
+  }
+
+  .user_infos_sub_container>span{
+    margin-top: 0.6vh;
+    margin-bottom: 0.6vh;
+
+  }
+  .user_infos_sub_container:first-child{
+    margin-left: 0;
+  }
+
+  #logout_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1
+  }
+
+  .user_infos_sub_container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+  }
+

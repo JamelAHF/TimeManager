@@ -1,0 +1,98 @@
+.btn_style_1{
+    background-color: #FF6700;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 0 solid white;
+
+    min-width: 92px;
+    min-height: 42px;
+    cursor: pointer;
+}
+
+.btn_style_2{
+    background-color: #FF6700;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 0 solid white;
+
+    min-width: 92px;
+    min-height: 32px;
+    cursor: pointer;
+}
+
+font-awesome-icon{
+    color: #FF6700;
+    cursor: pointer;
+}
+
+.btn_style_1:hover, .btn_style_2:hover, font-awesome-icon:hover, .btn_style_refresh:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.btn_style_1:active, .btn_style_2:active, font-awesome-icon:active, .btn_style_refresh:active{
+    transform: scale(0.9, 0.9);
+}
+
+::-webkit-scrollbar {
+    max-width: 6px;
+    max-height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #444957;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FF6700;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #CC5200;
+}
+
+.custom_input_1{
+    background-color: #2B2E38;
+    color: whitesmoke;
+    line-height: 2em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    padding-left: 0.6vw;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+
+.custom_input_2{
+    background-color: #10131A;
+    color: whitesmoke;
+    line-height: 2em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    padding-left: 0.6vw;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+
+.custom_select{
+    background-color: #2B2E38;
+    color: whitesmoke;
+    padding: 1vh 1vw;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn_style_refresh{
+    background-color: #2B2E38;
+    color: #FF6700;
+    padding: 1.4vh 1.4vw;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+    border: 1px solid #ff660036;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
